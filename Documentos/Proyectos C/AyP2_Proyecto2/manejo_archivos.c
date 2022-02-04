@@ -30,8 +30,9 @@ void escribir_en_archivo(char* nombre_archivo, char* cadena){
 //Retorna 1 si el archivo esta vacio, 0 en caso contrario.
 int archivo_esta_vacio(char* nombre_archivo){
     FILE* archivo = abrir_archivo_lec(nombre_archivo);
+    char vacio = fgetc(archivo);
 
-    if(feof(archivo)){
+    if (vacio == EOF){
         cerrar_archivo(archivo);
         return 1;
     }
