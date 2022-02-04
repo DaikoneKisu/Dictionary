@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1643958489 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/main.c
+	<stdio.h>
+	<stdlib.h>
+	"manejo_archivos.h"
+
+1643958512 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/manejo_archivos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"manejo_archivos.h"
+	"cadenas.h"
+
+1643958314 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/manejo_archivos.h
+
+1643955187 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/cadenas.h
+
+1643955187 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/cadenas.c
+	<stdlib.h>
+	<ctype.h>
+	<stdio.h>
+	<string.h>
+	"cadenas.h"
+
