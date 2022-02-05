@@ -1,17 +1,21 @@
 # depslib dependency file v1.0
-1643958489 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/main.c
+1644049795 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/main.c
 	<stdio.h>
 	<stdlib.h>
+	<glib.h>
+	"trie.h"
+	"sinonimos_o_antonimos.h"
 	"manejo_archivos.h"
+	"cadenas.h"
 
-1643960648 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/manejo_archivos.c
+1644022528 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/manejo_archivos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"manejo_archivos.h"
 	"cadenas.h"
 
-1643958314 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/manejo_archivos.h
+1644022528 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/manejo_archivos.h
 
 1643955187 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/cadenas.h
 
@@ -21,4 +25,21 @@
 	<stdio.h>
 	<string.h>
 	"cadenas.h"
+
+1644049732 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/sinonimos_o_antonimos.c
+	<stdio.h>
+	<stdlib.h>
+	<glib.h>
+	"sinonimos_o_antonimos.h"
+
+1644049311 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/sinonimos_o_antonimos.h
+
+1644048206 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/trie.c
+	"trie.h"
+	<stdlib.h>
+	<string.h>
+
+1644048188 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/trie.h
+	<glib.h>
+	<stdbool.h>
 

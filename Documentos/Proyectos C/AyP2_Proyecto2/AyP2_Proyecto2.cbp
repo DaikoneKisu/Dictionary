@@ -42,6 +42,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="manejo_archivos.h" />
+		<Unit filename="sinonimos_o_antonimos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sinonimos_o_antonimos.h" />
+		<Unit filename="trie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="trie.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
