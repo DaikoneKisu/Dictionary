@@ -61,7 +61,7 @@ void show_help(void) {
          "  s palabra - busca los sinónimos de `palabra`\n"
          "  a palabra - busca los antónimos de `palabra`\n"
          "  e expresión - muestra los sinónimos y antónimos de todas las\n"
-         "                palabras que coincidan con el regex construido\n"
+         "                palabras que coincidan con con el regex construido\n"
          "                a partir de `expresión`\n"
          "  ayuda - muestra esta entrada\n"
          "  salir - salir de la aplicación\n");
@@ -70,7 +70,7 @@ void show_help(void) {
 void run_non_interactive_mode(int argument_count, char* arguments[]) {
   Trie* dictionary = load_dictionary_from(DEFAULT_DICTIONARY_FILENAME);
 
-  int current_argument = 0;
+  int current_argument = 1;
   do {
     char* command = arguments[current_argument++];
     char* argument = arguments[current_argument++];
@@ -96,7 +96,7 @@ void run_interactive_mode(void) {
   for (;;) {
     printf("> ");
     scanf("%49s", command);
-
+    
     if (strcmp(command, "s") == 0) {
       scanf("%49s", argument);
       show_synonyms_of(dictionary, argument);
@@ -108,10 +108,13 @@ void run_interactive_mode(void) {
       show_synonyms_and_antonyms_of_words_matching(dictionary, argument);
     } else if (strcmp(command, "cargar") == 0) {
       scanf("%49s", argument);
-      trie_destroy(dictionary);
+      Trie* previous_dictionary = dictionary;
       dictionary = load_dictionary_from(argument);
       if (!dictionary) {
-        fprintf(stderr, "Error: No se pudieron cargar los datos del diccionario\n");
+        fprintf(stderr, "Error: No se pudieron cargar los datos del diccionario, se volverá al estado previo\n");
+        dictionary = previous_dictionary;
+      } else {
+        trie_destroy(previous_dictionary);
       }
     } else if (strcmp(command, "ayuda") == 0) {
       show_help();
@@ -131,7 +134,7 @@ int main(int argument_count, char* arguments[]) {
   generate_default_dictionary_file_if_missing();
   if (argument_count <= 1) {
     run_interactive_mode();
-  } else if (argument_count % 2 == 0) {
+  } else if (argument_count % 2 == 1) {
     run_non_interactive_mode(argument_count, arguments);
   } else {
     fprintf(stderr, "Error: Número erróneo de argumentos\n");
