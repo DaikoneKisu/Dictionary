@@ -27,7 +27,7 @@ Trie* trie_create(CleanupFunction cleanup) {
 
 void trie_destroy(Trie* self) {
   g_free(self->key);
-  if (self->cleanup) {
+  if (self->value && self->cleanup) {
     self->cleanup(self->value);
   }
   g_hash_table_destroy(self->children);
@@ -117,7 +117,7 @@ GList* trie_keys_matching(Trie* self, const char* pattern) {
   if (!regex) {
     return NULL;
   }
-
+  
   GList* keys = trie_keys(self);
   for (GList* key = keys; key;) {
     if (!g_regex_match(regex, (const char*) key->data, 0, NULL)) {

@@ -31,25 +31,21 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="cadenas.c">
+		<Unit filename="dictionary.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="cadenas.h" />
-		<Unit filename="main.c">
+		<Unit filename="dictionary_files_management.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="manejo_archivos.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="manejo_archivos.h" />
-		<Unit filename="sinonimos_o_antonimos.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sinonimos_o_antonimos.h" />
+		<Unit filename="dictionary_files_management.h" />
 		<Unit filename="trie.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="trie.h" />
+		<Unit filename="word_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="word_info.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

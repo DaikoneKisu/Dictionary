@@ -1,45 +1,55 @@
 # depslib dependency file v1.0
-1644049795 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/main.c
-	<stdio.h>
-	<stdlib.h>
-	<glib.h>
-	"trie.h"
-	"sinonimos_o_antonimos.h"
-	"manejo_archivos.h"
-	"cadenas.h"
-
-1644022528 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/manejo_archivos.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	"manejo_archivos.h"
-	"cadenas.h"
-
-1644022528 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/manejo_archivos.h
-
-1643955187 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/cadenas.h
-
-1643955187 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/cadenas.c
-	<stdlib.h>
-	<ctype.h>
-	<stdio.h>
-	<string.h>
-	"cadenas.h"
-
-1644049732 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/sinonimos_o_antonimos.c
-	<stdio.h>
-	<stdlib.h>
-	<glib.h>
-	"sinonimos_o_antonimos.h"
-
-1644049311 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/sinonimos_o_antonimos.h
-
-1644048206 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/trie.c
+1644108646 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/trie/trie.c
 	"trie.h"
 	<stdlib.h>
 	<string.h>
 
-1644048188 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/trie.h
+1644108644 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/trie/trie.h
 	<glib.h>
 	<stdbool.h>
+
+1644108639 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/word_info/word_info.c
+	"word_info.h"
+	<glib.h>
+	<stdio.h>
+	<stdlib.h>
+
+1644108643 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/word_info/word_info.h
+	<glib.h>
+
+1644109630 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/dictionary.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"word_info.h"
+	"dictionary_files_management.h"
+
+1644109499 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/word_info.h
+	<glib.h>
+
+1644109492 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/dictionary_files_management.h
+	"trie.h"
+
+1644109496 /home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/trie.h
+	<glib.h>
+	<stdbool.h>
+
+1644109491 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/dictionary_files_management.c
+	"dictionary_files_management.h"
+	<glib.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"word_info.h"
+
+1644109492 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/trie.c
+	"trie.h"
+	<stdlib.h>
+	<string.h>
+
+1644109493 source:/home/Daikone/Documentos/Proyectos C/AyP2_Proyecto2/word_info.c
+	"word_info.h"
+	<glib.h>
+	<stdio.h>
+	<stdlib.h>
 
